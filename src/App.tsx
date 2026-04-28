@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import WaveBackground from "./WaveBackground";
 import Header from "./components/Header";
 import HeroSection from "./sections/HeroSection";
@@ -6,7 +6,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import MilestoneSection from "./sections/MilestoneSection";
 import SkillsSection from "./sections/SkillsSection";
 import AboutSection from "./sections/AboutSection";
-import Footer from "./sections/Footer";
+import Footer from "./components/Footer";
 
 export default function App() {
   const smoothScrollViewportRef = useRef<HTMLDivElement | null>(null);

@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
 const aboutRows: { label: string; value: ReactNode }[] = [
-  { label: "Based in",      value: "Brisbane, Australia, open to relocation" },
+  { label: "Based in",      value: "Brisbane, Australia, Open to relocation" },
   { label: "Languages",     value: "Korean (native), English (fluent)" },
   { label: "Studies",       value: "Majored in Computer Science, Bachelor of IT @ QUT" },
   { label: "Off the clock", value: <>Amateur boxing, Football, Music, Drawing, Editing my YouTube vlog videos, Exploring the nature around the world.<br /><a href="https://www.youtube.com/@Dr.Babamba" target="_blank" rel="noopener noreferrer" className="about-yt-link">Check out my YouTube channel here!</a></> },
   { label: "Also me",       value: "I'm currently serving food and make drinks at a restaurant. I make sure people have a good time at my restaurant." },
-  { label: "How colleagues describe me", value: "Fun to work with, Calm under pressure, Always happy, Critical thinker, Passionate to learn new skills" },
+  { label: "How colleagues describe me", value: "Fun to work with | Calm under pressure | Always happy | Critical thinker | Passionate to learn new skills | Creative & Innovative" },
 ];
 
 export default function AboutSection() {
