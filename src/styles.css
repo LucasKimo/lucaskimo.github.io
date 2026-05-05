@@ -284,16 +284,28 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  background: var(--surface);
-  backdrop-filter: blur(16px);
-  box-shadow: var(--shadow-soft);
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  backdrop-filter: blur(36px) saturate(1.6) brightness(1.06);
+  -webkit-backdrop-filter: blur(36px) saturate(1.6) brightness(1.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.45),
+    0 2px 8px rgba(0, 0, 0, 0.18),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.64),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
 .contact-pill:focus-visible,
 .round-button:focus-visible {
   outline: none;
 }
+
 
 .contact-pill {
   z-index: 1;
@@ -456,21 +468,30 @@ a {
 .round-button {
   transition:
     transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
-    background-color 320ms ease;
-}
-
-.contact-switcher.is-swapped .contact-pill {
-  transform: translateY(-2px);
-  background: var(--surface-strong);
+    box-shadow 320ms ease,
+    border-color 320ms ease;
 }
 
 .contact-switcher.is-swapped .contact-pill {
   transform: translate3d(var(--contact-pill-shift), -2px, 0);
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 0.30) 0%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 10px 36px rgba(0, 0, 0, 0.48),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.78),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 0 32px rgba(255, 255, 255, 0.06);
 }
 
 .contact-switcher.is-swapped .round-button {
   transform: translate3d(var(--round-button-shift), -2px, 0) scale(0.98);
-  background: var(--surface);
 }
 
 .main-nav-link:hover,
