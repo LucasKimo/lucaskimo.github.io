@@ -12,15 +12,15 @@ export const featuredProjects = [
   {
     id: "futurescope",
     name: "Future Scope",
-    roleTitle: "Team Leader",
+    roleTitle: "Full-stack Developer",
     region: "Brisbane",
-    scope: "2025 Code Network Hackathon",
+    scope: "2025 Code Network Winter Hackathon",
     timeline: "2025 - Present",
-    summary: "2025 Code Network Winter Hackathon Winner | AI-powered roadmap generator web app",
+    summary: "Code Network Hackathon Winner | AI-powered roadmap generator web app",
     bullets: [
-      "Led design system governance across multiple product and dev teams",
-      "Reduced design-to-dev friction through clear documentation and UX standards",
-      "Facilitated stakeholder alignment in complex, multi-team environments",
+      "An interactive AI-powered (OpenAI API) web application",
+      "Enables users to reflect on their skills and experience, and identify future steps to achieve their goals",
+      "Motivates users to achieve their goals through gamification features",
     ],
     tags: ["JavaScript", "React", "Node.js", "OpenAI API", "PostgreSQL", "AWS"],
     image: "/FS.png",
@@ -32,11 +32,12 @@ export const featuredProjects = [
     region: "Brisbane",
     scope: "QUT",
     timeline: "2025",
-    summary: "Redesigning internal risk intelligence tools for faster decision-making in regulated workflows.",
+    summary: "Bionauts | Primary and Secondary Nature Education Institute",
     bullets: [
-      "Built modular dashboard patterns for analysts and ops teams",
-      "Introduced progressive disclosure for dense legal and compliance data",
-      "Improved workflow completion speed through guided interaction architecture",
+      "Users can book nature adventures and access the resources they need",
+      "Users can connect and communicate with each other through Social Network feature",
+      "Authorised users can post adventures",
+      "Users can view up‑to‑date announcements, stories, and event recaps from Bionauts. "
     ],
     tags: ["JavaScript", "React", "Bootstrap", "Node.js"],
     image: "/bionauts.png",
@@ -45,7 +46,7 @@ export const featuredProjects = [
 
 export const milestones = [
   { year: "2026", title: "Power Platform Fundamentals", category: "Certification", organization: "Microsoft", details: ["Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: "https://learn.microsoft.com/api/credentials/share/en-us/15097636/2FB9F4B39ABE15DB?sharingId=B1ABECB15B13FB17" },
-  { year: "2025", title: "Bachelor of IT", category: "Education", organization: "Queensland University of Technology", details: ["Computer Science"], link: "/Bachelor.pdf" },
+  { year: "2025", title: "Bachelor of IT", category: "Education", organization: "Queensland University of Technology", details: ["Computer Science Major"], link: "/Bachelor.pdf" },
   { year: "2025", title: "Front-end Developer", category: "Experience", organization: "Bionauts, QUT", details: ["React", "Bootstrap", "Node.js"], link: null },
   { year: "2025", title: "Future Scope", category: "Award", organization: "Code Network Hackathon, QUT", details: ["JavaScript", "React", "Node.js", "AWS", "OpenAI API"], link: "https://www.qut.edu.au/about/faculty-of-science/insights/hacking-ambition-into-action-code-networks-2025-winter-hackathon" },
   { year: "2025", title: "Azure Data Fundamentals", category: "Certification", organization: "Microsoft", details: ["Azure", "Databricks", "Power BI", "Cloud", "Cosmos DB", "SQL"], link: "https://www.credly.com/badges/e33a9d27-e67a-4af0-bcb2-f4b543b2102d" },

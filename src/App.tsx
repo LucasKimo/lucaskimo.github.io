@@ -248,14 +248,21 @@ export default function App() {
   // Cursor at top (reveals header when mouse near top edge)
   useEffect(() => {
     const handleGlobalMouseMove = (e: globalThis.MouseEvent) => {
-      if (e.clientY < 50) {
+      const headerEl = document.querySelector<HTMLElement>(".topbar");
+      const headerHeight = headerEl?.offsetHeight ?? 64;
+      if (e.clientY < 20) {
         if (cursorTopTimerRef.current !== null) {
           clearTimeout(cursorTopTimerRef.current);
           cursorTopTimerRef.current = null;
         }
         setIsCursorAtTop(true);
       } else if (isCursorAtTop) {
-        if (cursorTopTimerRef.current === null) {
+        if (e.clientY < headerHeight) {
+          if (cursorTopTimerRef.current !== null) {
+            clearTimeout(cursorTopTimerRef.current);
+            cursorTopTimerRef.current = null;
+          }
+        } else if (cursorTopTimerRef.current === null) {
           cursorTopTimerRef.current = setTimeout(() => {
             setIsCursorAtTop(false);
             cursorTopTimerRef.current = null;
