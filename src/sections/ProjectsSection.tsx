@@ -74,12 +74,12 @@ export default function ProjectsSection() {
           onMouseMove={handleVisualMouseMove}
           onMouseEnter={handleVisualMouseEnter}
           onMouseLeave={handleVisualMouseLeave}
+          onClick={handleVisualClick}
+          style={activeProject.link ? { cursor: "none" } : undefined}
         >
           <div
             className="featured-project-visual"
             aria-hidden="true"
-            onClick={handleVisualClick}
-            style={activeProject.link ? { cursor: "none" } : undefined}
           >
             <div className="visual-single-card">
               <img

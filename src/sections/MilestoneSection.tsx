@@ -34,7 +34,7 @@ export default function MilestoneSection() {
               <td className="archive-link">
                 {project.link ? (
                   <a href={project.link} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`}>
-                    <ArrowUpRight size={16} strokeWidth={2} aria-hidden="true" />
+                    <ArrowUpRight size={22} strokeWidth={2} aria-hidden="true" />
                   </a>
                 ) : (
                   <span className="archive-link-empty">—</span>

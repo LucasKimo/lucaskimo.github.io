@@ -18,7 +18,7 @@ export const featuredProjects = [
     timeline: "2025 - Present",
     summary: "Code Network Hackathon Winner | AI-powered roadmap generator web app",
     bullets: [
-      "An interactive AI-powered (OpenAI API) web application",
+      "An interactive AI-powered (OpenAI API) roadmap generator web application",
       "Enables users to reflect on their skills and experience, and identify future steps to achieve their goals",
       "Motivates users to achieve their goals through gamification features",
     ],

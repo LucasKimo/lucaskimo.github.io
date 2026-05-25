@@ -5,7 +5,7 @@ const aboutRows: { label: string; value: ReactNode }[] = [
   { label: "Languages",     value: "Korean (native), English (fluent)" },
   { label: "Studies",       value: "Majored in Computer Science, Bachelor of IT @ QUT" },
   { label: "Off the clock", value: <>Amateur boxing, Football, Music, Drawing, Editing my YouTube vlog videos, Exploring the nature around the world.<br /><a href="https://www.youtube.com/@Dr.Babamba" target="_blank" rel="noopener noreferrer" className="about-yt-link">Check out my YouTube channel here!</a></> },
-  { label: "Also me",       value: "I'm currently serving food and make drinks at a restaurant. I make sure people have a good time at my restaurant." },
+  { label: "Also me",       value: "I’m passionate about customizing pre-built Machine Learning models to deliver impactful solutions for businesses and individuals. If you're interested in discussing ML solutions or collaborating, feel free to connect!" },
   { label: "How colleagues describe me", value: "Fun to work with | Calm under pressure | Always happy | Critical thinker | Passionate to learn new skills | Creative & Innovative" },
 ];
 
@@ -28,9 +28,9 @@ export default function AboutSection() {
             </div>
           ))}
           <p className="about-bio">
-            I've always been a creative person who is curious about how things work.<br />
+            "I've always been a creative person who is curious about how things work.<br />
             I'm eager to surprise people with innovative tools and solve their problems.<br />
-            I challenge myself by training in an amateur boxing team and exploring nature.
+            I bring that same drive to my personal life, challenging myself through amateur boxing training and disconnecting in nature to recharge my creativity."
           </p>
         </div>
       </div>
