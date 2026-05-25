@@ -417,6 +417,7 @@ a {
     scale(calc(1 - (var(--hero-scroll-progress, 0) * 0.54)));
   opacity: calc(1 - (var(--hero-scroll-progress, 0) * 0.18));
   will-change: transform;
+  cursor: default;
 }
 
 .name-kicker {
@@ -447,9 +448,6 @@ a {
   display: block;
 }
 
-.name-lockup {
-  cursor: default;
-}
 
 .brand-mark,
 .text-link,
@@ -607,13 +605,8 @@ a {
   background:
     radial-gradient(120% 80% at 10% 0%, rgba(32, 48, 78, 0.42), transparent 62%),
     linear-gradient(140deg, rgba(5, 10, 20, 0.88), rgba(2, 4, 9, 0.96));
-}
-
-
-.featured-project-visual {
   perspective: 900px;
   overflow: hidden;
-  
 }
 
 .visual-cursor {
@@ -1491,10 +1484,6 @@ a {
   color: #fff;
   margin: 0;
 }
-
-
-
-
 
 
 
