@@ -65,6 +65,7 @@ export const featuredProjects = [
 ] as const;
 
 export const milestones = [
+  { year: "2026", title: "Power Platform Consultant", category: "Experience", organization: "DynamX Institute", details: ["Microsoft Teams", "Presentation", "Professional Manner", "Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: null },
   { year: "2026", title: "Power Platform Fundamentals", category: "Certification", organization: "Microsoft", details: ["Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: "https://learn.microsoft.com/api/credentials/share/en-us/15097636/2FB9F4B39ABE15DB?sharingId=B1ABECB15B13FB17" },
   { year: "2025", title: "Bachelor of IT", category: "Education", organization: "Queensland University of Technology", details: ["Computer Science Major"], link: "/Bachelor.pdf" },
   { year: "2025", title: "Front-end Developer", category: "Experience", organization: "Bionauts, QUT", details: ["JavaScript", "React.js", "Bootstrap", "Node.js"], link: null },

@@ -277,6 +277,31 @@ a {
   height: var(--contact-switcher-height);
 }
 
+.email-toast {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--surface-strong);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 10px 20px;
+  border-radius: 100px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+
+.email-toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 .contact-pill,
 .round-button {
   position: absolute;
@@ -1236,9 +1261,12 @@ a {
     display: none;
   }
 
-  .main-nav,
-  .topbar-actions {
+  .main-nav {
     display: none;
+  }
+
+  .topbar-actions {
+    display: flex;
   }
 
   .menu-button {

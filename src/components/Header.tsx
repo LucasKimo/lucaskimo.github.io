@@ -1,4 +1,5 @@
 import {
+  useCallback,
   useEffect,
   useLayoutEffect,
   useRef,
@@ -25,6 +26,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
   const roundButtonRef = useRef<HTMLAnchorElement | null>(null);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
   const [isContactSwapped, setIsContactSwapped] = useState(false);
   const [isArrowBehind, setIsArrowBehind] = useState(false);
   const [contactMetrics, setContactMetrics] = useState({
@@ -87,6 +89,13 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
       window.scrollTo({ top, behavior: "smooth" });
     });
   };
+
+  const handleContactClick = useCallback(() => {
+    navigator.clipboard.writeText("eunsukim1180@gmail.com").then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    }).catch(() => {});
+  }, []);
 
   const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -152,6 +161,9 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
 
   return (
     <>
+      <div className={`email-toast${isCopied ? " is-visible" : ""}`} aria-live="polite">
+        Email copied!
+      </div>
       <header className={`topbar${isHeaderHidden && !isCursorAtTop ? " is-hidden" : ""}${isScrolledPastHero ? " is-blurred" : ""}`}>
         <a
           className="brand-mark"
@@ -184,7 +196,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
             onFocus={handleContactEnter}
             onBlur={handleContactBlur}
           >
-            <a ref={contactRef} className="contact-pill" href="mailto:eunsukim1180@gmail.com">
+            <a ref={contactRef} className="contact-pill" href="mailto:eunsukim1180@gmail.com" onClick={handleContactClick}>
               Contact Me
             </a>
             <a
@@ -192,6 +204,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
               className="round-button"
               href="mailto:eunsukim1180@gmail.com"
               aria-label="Send an email"
+              onClick={handleContactClick}
               onTransitionEnd={(event) => handleRoundButtonTransitionEnd(event.propertyName)}
             >
               <ArrowRight aria-hidden="true" size={18} strokeWidth={2} />
@@ -231,7 +244,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
           <a className="mobile-menu-link" href="/skills" onClick={makeMobileNavHandler("skills", "/skills")}>Skills</a>
           <a className="mobile-menu-link" href="/about" onClick={makeMobileNavHandler("about", "/about")}>About</a>
         </nav>
-        <a className="mobile-menu-contact" href="mailto:eunsukim1180@gmail.com">
+        <a className="mobile-menu-contact" href="mailto:eunsukim1180@gmail.com" onClick={handleContactClick}>
           Contact Me
           <ArrowRight size={18} strokeWidth={2} aria-hidden="true" />
         </a>
