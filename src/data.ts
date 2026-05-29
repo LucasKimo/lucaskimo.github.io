@@ -35,7 +35,7 @@ export const featuredProjects = [
     timeline: "2026",
     summary: "Power Platform Library System | Enterprise library management built on Microsoft Power Platform",
     bullets: [
-      "Built a full library management system using Power Apps as the primary interface for staff and patrons",
+      "Built a full library management system using Power Apps as the primary interface for staffs and library users",
       "Automated book loan, return, and overdue notification workflows with Power Automate",
       "Managed structured library data and relationships using Microsoft Dataverse",
       "Delivered a public-facing catalogue and reservation portal via Power Pages",
@@ -69,7 +69,7 @@ export const milestones = [
   { year: "2026", title: "Power Platform Fundamentals", category: "Certification", organization: "Microsoft", details: ["Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: "https://learn.microsoft.com/api/credentials/share/en-us/15097636/2FB9F4B39ABE15DB?sharingId=B1ABECB15B13FB17" },
   { year: "2025", title: "Bachelor of IT", category: "Education", organization: "Queensland University of Technology", details: ["Computer Science Major"], link: "/Bachelor.pdf" },
   { year: "2025", title: "Front-end Developer", category: "Experience", organization: "Bionauts, QUT", details: ["JavaScript", "React.js", "Bootstrap", "Node.js"], link: null },
-  { year: "2025", title: "Future Scope", category: "Award", organization: "Code Network Hackathon, QUT", details: ["JavaScript", "React.js", "Node.js", "AWS", "Docker", "OpenAI API"], link: "https://www.qut.edu.au/about/faculty-of-science/insights/hacking-ambition-into-action-code-networks-2025-winter-hackathon" },
+  { year: "2025", title: "Tech Lead - Future Scope", category: "Award", organization: "Code Network Hackathon, QUT", details: ["JavaScript", "React.js", "Node.js", "AWS", "Docker", "OpenAI API"], link: "https://www.qut.edu.au/about/faculty-of-science/insights/hacking-ambition-into-action-code-networks-2025-winter-hackathon" },
   { year: "2025", title: "Azure Data Fundamentals", category: "Certification", organization: "Microsoft", details: ["Azure", "Databricks", "Power BI", "Cloud", "Cosmos DB", "SQL"], link: "https://www.credly.com/badges/e33a9d27-e67a-4af0-bcb2-f4b543b2102d" },
   { year: "2025", title: "Azure AI Fundamentals", category: "Certification", organization: "Microsoft", details: ["Azure", "Bot Service", "Machine Learning", "Cognitive Services", "AI"], link: "https://www.credly.com/badges/dbceeab4-7a7e-470c-9881-b9b5a725b47a" },
   { year: "2024", title: "Executive Deans' Award", category: "Award", organization: "Queensland University of Technology", details: ["QUT Executive Deans' Commendation for Academic Excellence"], link: "/Executive_Deans.pdf" },
