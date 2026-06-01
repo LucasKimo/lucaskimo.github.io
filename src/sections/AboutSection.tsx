@@ -23,7 +23,7 @@ export default function AboutSection() {
         <div className="about-info">
           {aboutRows.map(({ label, value }) => (
             <div key={label} className="about-info-row">
-              <span className="about-info-label">{label}</span>
+              <span className="about-info-label">{label}</span>{" "}
               <span className="about-info-value">{value}</span>
             </div>
           ))}
