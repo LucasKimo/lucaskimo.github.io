@@ -827,6 +827,15 @@ a {
   background: var(--surface);
 }
 
+.archive-table tbody tr.archive-row-linked {
+  cursor: pointer;
+}
+
+.archive-table tbody tr.archive-row-linked:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: -2px;
+}
+
 .archive-table td {
   padding: 18px 16px;
   vertical-align: middle;
@@ -873,17 +882,14 @@ a {
   color: var(--text-soft);
 }
 
-.archive-link a {
+.archive-link svg {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: -10px;
   color: var(--text-soft);
   transition: color 180ms ease;
 }
 
-.archive-link a:hover {
+.archive-row-linked:hover .archive-link svg,
+.archive-row-linked:focus-visible .archive-link svg {
   color: var(--text-primary);
 }
 

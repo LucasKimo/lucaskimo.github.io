@@ -22,7 +22,28 @@ export default function MilestoneSection() {
         </thead>
         <tbody>
           {milestones.map((project) => (
-            <tr key={`${project.year}-${project.title}`}>
+            <tr
+              key={`${project.year}-${project.title}`}
+              className={project.link ? "archive-row-linked" : undefined}
+              tabIndex={project.link ? 0 : undefined}
+              role={project.link ? "link" : undefined}
+              aria-label={project.link ? `View ${project.title}` : undefined}
+              onClick={
+                project.link
+                  ? () => window.open(project.link, "_blank", "noopener,noreferrer")
+                  : undefined
+              }
+              onKeyDown={
+                project.link
+                  ? (event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        window.open(project.link, "_blank", "noopener,noreferrer");
+                      }
+                    }
+                  : undefined
+              }
+            >
               <td className="archive-year">{project.year}</td>
               <td className="archive-name">{project.title}</td>
               <td className="archive-category">{project.category}</td>
@@ -34,9 +55,7 @@ export default function MilestoneSection() {
               </td>
               <td className="archive-link">
                 {project.link ? (
-                  <a href={project.link} target="_blank" rel="noreferrer" aria-label={`View ${project.title} on GitHub`}>
-                    <ArrowUpRight size={22} strokeWidth={2} aria-hidden="true" />
-                  </a>
+                  <ArrowUpRight size={22} strokeWidth={2} aria-hidden="true" />
                 ) : (
                   <span className="archive-link-empty">—</span>
                 )}

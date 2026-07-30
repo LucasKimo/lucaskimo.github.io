@@ -15,8 +15,8 @@ export default function Footer() {
               key={label}
               className="footer-link"
               href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel={href.startsWith("http") ? "noreferrer" : undefined}
+              target="_blank"
+              rel="noreferrer"
             >
               <Icon aria-hidden="true" size={16} strokeWidth={2} />
               <span>{label}</span>

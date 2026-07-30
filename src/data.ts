@@ -10,29 +10,12 @@ export const socialLinks = [
 
 export const featuredProjects = [
   {
-    id: "futurescope",
-    name: "Future Scope",
-    roleTitle: "Full-stack Developer",
-    region: "Brisbane",
-    scope: "2025 Code Network Winter Hackathon",
-    timeline: "2025 - Present",
-    summary: "Code Network Hackathon Winner | AI-powered roadmap generator web app",
-    bullets: [
-      "An interactive AI-powered (OpenAI API) roadmap generator web application",
-      "Enables users to reflect on their skills and experience, and identify future steps to achieve their goals",
-      "Motivates users to achieve their goals through gamification features",
-    ],
-    tags: ["JavaScript", "React.js", "Node.js", "OpenAI API", "PostgreSQL", "AWS"],
-    image: "/FS.png",
-    link: null,
-  },
-  {
     id: "power-platform-library",
     name: "Library System",
     roleTitle: "Power Platform Consultant",
-    region: "Brisbane",
-    scope: "DynamX Institute Internship",
-    timeline: "2026",
+    region: "Gold Coast",
+    scope: "DynamX Institute",
+    timeline: "Apr 2026",
     summary: "Power Platform Library System | Enterprise library management built on Microsoft Power Platform",
     bullets: [
       "Built a full library management system using Power Apps as the primary interface for staffs and library users",
@@ -43,6 +26,23 @@ export const featuredProjects = [
     tags: ["Power Apps", "Power Automate", "Dataverse", "Power Pages"],
     image: "/Power.png",
     link: "https://github.com/LucasKimo/PowerPlatform-LibrarySystem",
+  },
+  {
+    id: "futurescope",
+    name: "Future Scope",
+    roleTitle: "Full-stack Developer",
+    region: "Brisbane",
+    scope: "2025 Code Network Winter Hackathon",
+    timeline: "Aug 2025",
+    summary: "Code Network Hackathon Winner | AI-powered roadmap generator web app",
+    bullets: [
+      "An interactive AI-powered (OpenAI API) roadmap generator web application",
+      "Enables users to reflect on their skills and experience, and identify future steps to achieve their goals",
+      "Motivates users to achieve their goals through gamification features",
+    ],
+    tags: ["JavaScript", "React.js", "Node.js", "OpenAI API", "PostgreSQL", "AWS"],
+    image: "/FS.png",
+    link: null,
   },
   {
     id: "bionauts",
@@ -65,7 +65,7 @@ export const featuredProjects = [
 ] as const;
 
 export const milestones = [
-  { year: "2026", title: "Power Platform Consultant", category: "Experience", organization: "DynamX Institute", details: ["Microsoft Teams", "Presentation", "Professional Manner", "Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: null },
+  { year: "2026", title: "Power Platform Consultant", category: "Experience", organization: "DynamX Institute", details: ["Microsoft Teams", "Presentation", "Professional Manner", "Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: "https://github.com/LucasKimo/PowerPlatform-LibrarySystem" },
   { year: "2026", title: "Power Platform Fundamentals", category: "Certification", organization: "Microsoft", details: ["Power Platform", "Power Apps", "Power Automate", "Power Pages", "Dataverse", "Power BI"], link: "https://learn.microsoft.com/api/credentials/share/en-us/15097636/2FB9F4B39ABE15DB?sharingId=B1ABECB15B13FB17" },
   { year: "2025", title: "Bachelor of IT", category: "Education", organization: "Queensland University of Technology", details: ["Computer Science Major"], link: "/Bachelor.pdf" },
   { year: "2025", title: "Front-end Developer", category: "Experience", organization: "Bionauts, QUT", details: ["JavaScript", "React.js", "Bootstrap", "Node.js"], link: null },
