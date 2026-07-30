@@ -5,7 +5,7 @@ export const navigationItems = ["Projects", "Milestone", "Skills", "About"] as c
 export const socialLinks = [
   { href: "https://github.com/LucasKimo", label: "GitHub", icon: Github },
   { href: "https://www.linkedin.com/in/lucas-eunsu-kim", label: "LinkedIn", icon: Linkedin },
-  { href: "/EunsuKim_resume.pdf", label: "Resume", icon: FileText },
+  { href: "/LucasKim_resume.pdf", label: "Resume", icon: FileText },
 ] satisfies Array<{ href: string; label: string; icon: LucideIcon }>;
 
 export const featuredProjects = [
