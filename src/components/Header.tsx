@@ -91,7 +91,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
   };
 
   const handleContactClick = useCallback(() => {
-    navigator.clipboard.writeText("eunsukim1180@gmail.com").then(() => {
+    navigator.clipboard.writeText("contact@lucaskim.dev").then(() => {
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     }).catch(() => {});
@@ -196,13 +196,13 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
             onFocus={handleContactEnter}
             onBlur={handleContactBlur}
           >
-            <a ref={contactRef} className="contact-pill" href="mailto:eunsukim1180@gmail.com" onClick={handleContactClick}>
+            <a ref={contactRef} className="contact-pill" href="mailto:contact@lucaskim.dev" onClick={handleContactClick}>
               Contact Me
             </a>
             <a
               ref={roundButtonRef}
               className="round-button"
-              href="mailto:eunsukim1180@gmail.com"
+              href="mailto:contact@lucaskim.dev"
               aria-label="Send an email"
               onClick={handleContactClick}
               onTransitionEnd={(event) => handleRoundButtonTransitionEnd(event.propertyName)}
@@ -244,7 +244,7 @@ export default function Header({ isHeaderHidden, isCursorAtTop, isScrolledPastHe
           <a className="mobile-menu-link" href="/skills" onClick={makeMobileNavHandler("skills", "/skills")}>Skills</a>
           <a className="mobile-menu-link" href="/about" onClick={makeMobileNavHandler("about", "/about")}>About</a>
         </nav>
-        <a className="mobile-menu-contact" href="mailto:eunsukim1180@gmail.com" onClick={handleContactClick}>
+        <a className="mobile-menu-contact" href="mailto:contact@lucaskim.dev" onClick={handleContactClick}>
           Contact Me
           <ArrowRight size={18} strokeWidth={2} aria-hidden="true" />
         </a>
